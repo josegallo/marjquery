@@ -1,6 +1,15 @@
 <script>
+  
 (function ($) {
 	$(document).ready(function () {
+	  
+	  	$(window).scroll(function (event) {
+    	var scroll = $(window).scrollTop();
+    	console.log("test lower logo");
+         $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+         $(".navbar-inner .logo").css("align-items","center");
+			});
+
         $(".arrow-wow").click(function() {
                 var heightA1 = $("div.begin-section").height();
                 var heightE1 = parseInt(heightA1);

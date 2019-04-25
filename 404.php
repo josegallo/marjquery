@@ -37,12 +37,21 @@
 
         h1 {
             font-family: 'Inter-ExtraLightBETA';
-            font-size: 50px;
+            font-size: 100px;
             text-align:left;
             padding: 0 0 0 100px;
         }
         .space-404{
-            min-height:60px;
+            min-height:80px;
+        }
+        .navbar-inner.menu-type-text .logo.navbar-left a{
+            font-size:50px !important;
+        }
+        .break-404{
+            display:none;
+        }
+        .hamburger.navbar-right.semplice-menu{
+            display:none;
         }
     }
     /* bigger than mobiles */
@@ -66,23 +75,22 @@
 
     <div class="no-content">
 
-    <div class="jumbotron">
-    <h1 class="text-left" >Interiografismo </h1>
-    <br>
-    <h1 class="text-left" >Singular</h1>
-    <div class="space-404">
+        <div class="jumbotron">
+        <h1 class="text-left" >Interiografismo </h1>
+        <br class ="break-404">
+        <h1 class="text-left" >Singular</h1>
+        <div class="space-404">
     </div>
-    </div>
+
+    </div class="jumbotron">
         <p>Vaya, parece que nuestra web está de lunes.</p>
         <p>Pincha <a href="<?php echo home_url(); ?>">aquí</a> para volver a nuestra home.</p>
     </div>
-
-    <script>
-
-        var position = $(".logo.navbar-left").offset().left;
-        $("h1, div.no-content p").css("padding-left", position + "px");
     
 
+    <script>
+        var position = $(".logo.navbar-left").offset().left;
+        $("h1, div.no-content p").css("padding-left", position + "px");
 
     </script>
 
