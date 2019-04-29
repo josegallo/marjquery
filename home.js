@@ -31,7 +31,7 @@
                 var heightE3 = parseInt(heightA3);
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(".arrow-somos-devotos").offset().top - heightE3
-            }, 2000);
+            }, 3000);
         });
 
         $(".arrow-somos-devotos").click(function() {
