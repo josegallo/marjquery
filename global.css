@@ -1,0 +1,119 @@
+/* proyectos web style */
+
+.casa-victoria-proyecto:hover{
+    color: #ffc600;
+}
+
+.casa-victoria-proyecto:hover span.peque{
+    color: black;
+}
+
+.casa-victoria-proyecto span.peque{
+    color: white;
+}
+
+.foto-marlo-proyecto:hover{
+    color: #ffc600;
+}
+
+.foto-marlo-proyecto span.peque{
+    color: white;
+}
+
+.foto-marlo-proyecto:hover span.peque{
+    color: black;
+}
+
+.mujer-y-arquitectura-proyecto:hover{
+    color: #ffc600;
+}
+
+.mujer-y-arquitectura-proyecto span.peque{
+    color: white;
+}
+
+.mujer-y-arquitectura-proyecto:hover span.peque{
+    color: black;
+}
+
+.gobierno-abierto-proyecto:hover{
+    color: #ffc600;
+}
+
+.gobierno-abierto-proyecto span.peque{
+    color: white;
+}
+
+.gobierno-abierto-proyecto:hover span.peque{
+    color: black;
+}
+
+.logos-indentidad-proyecto:hover{
+    color: #ffc600;
+}
+
+.logos-indentidad-proyecto span.peque{
+    color: white;
+}
+
+.logos-indentidad-proyecto:hover span.peque{
+    color: black;
+}
+
+.bosque-urbano-proyecto:hover{
+    color: #ffc600;
+}
+
+.bosque-urbano-proyecto span.peque{
+    color: white;
+}
+
+.bosque-urbano-proyecto:hover span.peque{
+    color: black;
+}
+
+.block-to-remove {
+    display: none;
+}
+
+/* section{
+display: none;
+} */
+
+/* Cursor Styling */
+
+.cursor-marlo::after {
+    content:'_';
+    display:inline-block;
+    margin-left:3px;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.share-button.button-facebook {
+    background: black!important;
+}
+
+.share-button.button-twitter {
+    background: black!important;
+}
+
+.share-button.button-linkedin{
+    background: black!important;
+}
