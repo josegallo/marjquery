@@ -1,6 +1,6 @@
 /* proyectos web style */
 
-.casa-victoria-proyecto:hover{
+.casa-victoria-proyecto:hover, .casa-victoria-proyecto a:hover{
     color: #ffc600;
 }
 
@@ -12,7 +12,7 @@
     color: white;
 }
 
-.foto-marlo-proyecto:hover{
+.foto-marlo-proyecto:hover, .foto-marlo-proyecto a:hover{
     color: #ffc600;
 }
 
@@ -24,7 +24,7 @@
     color: black;
 }
 
-.mujer-y-arquitectura-proyecto:hover{
+.mujer-y-arquitectura-proyecto:hover, .mujer-y-arquitectura-proyecto a:hover{
     color: #ffc600;
 }
 
@@ -36,7 +36,7 @@
     color: black;
 }
 
-.gobierno-abierto-proyecto:hover{
+.gobierno-abierto-proyecto:hover, .gobierno-abierto-proyecto a:hover{
     color: #ffc600;
 }
 
@@ -48,7 +48,7 @@
     color: black;
 }
 
-.logos-indentidad-proyecto:hover{
+.logos-indentidad-proyecto:hover, .logos-indentidad-proyecto a:hover{
     color: #ffc600;
 }
 
@@ -60,7 +60,7 @@
     color: black;
 }
 
-.bosque-urbano-proyecto:hover{
+.bosque-urbano-proyecto:hover, .bosque-urbano-proyecto a:hover{
     color: #ffc600;
 }
 
@@ -75,10 +75,6 @@
 .block-to-remove {
     display: none;
 }
-
-/* section{
-display: none;
-} */
 
 /* Cursor Styling */
 
@@ -106,6 +102,8 @@ display: none;
   }
 }
 
+/* Styling share buttons to black */
+
 .share-button.button-facebook {
     background: black!important;
 }
@@ -117,3 +115,50 @@ display: none;
 .share-button.button-linkedin{
     background: black!important;
 }
+
+
+/* maximaxing contact form column */
+section.post.is-content.post-24.page.type-page.status-publish.hentry .column {
+    width: 100%!important;
+    max-width: 100%!important;
+    flex: 0 0 auto!important;
+    flex-basis: 100%!important;
+}
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium, 
+div.wpforms-container-full .wpforms-form select.wpforms-field-medium, 
+div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .wp-block-column {
+        flex-basis: 100%!important;
+    }
+}
+
+/* Delete text of Header "contacto" */
+section.post.is-content.post-24.page.type-page.status-publish.hentry .post-heading h2 a {
+    display: none;
+}
+
+/* Font of wp form left column */
+.wp-block-column p{
+    font-family: Inter-Bold, sans-serif;
+    font-size: 50px!important;
+}
+
+/* form submit button to black */
+
+button#wpforms-submit-19 {
+    background: black;
+    color: white;
+}
+
+/* delete padding on posts and contactform */
+
+.is-frontend .posts {
+    padding-top: 0!important;
+}
+
+

@@ -11,10 +11,6 @@ $(window).scroll(function (event) {
             $("section#comments").css("display","none");
             $(".wpforms-field.wpforms-field-hp").css("display","none");   
         }
-        // if(window.location.href === "https://estudiomarlo.es/webnew/casa-victoria"){
-        // $('.share-button.button-facebook a').text("COMPARTE");
-        //     }
-        
 });
 
 //Project Casa Vitoria
