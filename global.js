@@ -11,16 +11,24 @@ $(window).scroll(function (event) {
             $("section#comments").css("display","none");
             $(".wpforms-field.wpforms-field-hp").css("display","none");   
         }
+        // if(window.location.href === "https://estudiomarlo.es/webnew/casa-victoria"){
+        // $('.share-button.button-facebook a').text("COMPARTE");
+        //     }
+        
 });
 
+//Project Casa Vitoria
+(function ($) {
+	$(document).ready(function () {
+                //change text of share buttons
+                $('.share-button.button-facebook a').text("COMPARTE");
+                $('.share-button.button-twitter a').text("COMPARTE");
+                $('.share-button.button-linkedin a').text("COMPARTE");
+                
+    });
+})(jQuery);
 
-//animation
-// $(window).scroll(function (event) {
-//     var scroll = $(window).scrollTop();
-//     $(".navbar-inner.menu-type-text .logo.navbar-left a").animate({ 'font-size': '1.5rem' }, 3000);    
-//     $(".navbar-inner .logo").css("align-items","center");
-// });
-        
+
 //remove wow section on devices
 // if ($(window).width() >= 767) {
 //     $("section#section_l7uzvth4u").css("display", "none");
