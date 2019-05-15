@@ -13,13 +13,35 @@ $(window).scroll(function (event) {
         }
 });
 
-//Project Casa Vitoria
+//hide of share buttons on each project
 (function ($) {
 	$(document).ready(function () {
                 //change text of share buttons
                 $('.share-button.button-facebook a').text("COMPARTE");
                 $('.share-button.button-twitter a').text("COMPARTE");
                 $('.share-button.button-linkedin a').text("COMPARTE");
+                
+    });
+})(jQuery);
+
+//Reinforce hide of share buttons on each project if scroll
+$(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+                //change text of share buttons
+                $('.share-button.button-facebook a').text("COMPARTE");
+                $('.share-button.button-twitter a').text("COMPARTE");
+                $('.share-button.button-linkedin a').text("COMPARTE");
+});
+
+
+//Contacto reinforce hide of share buttons
+(function ($) {
+	$(document).ready(function () {
+                if(window.location.href === "https://estudiomarlo.es/webnew/home/contacto"){
+                        $("div#share-holder").css("display","none");
+                        $("section#comments").css("display","none");
+                        $(".wpforms-field.wpforms-field-hp").css("display","none");   
+                    }
                 
     });
 })(jQuery);
