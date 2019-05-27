@@ -117,8 +117,26 @@
 }
 
 
+/*Contact form*/
+
+
+/* form submit button to black */
+
+/*button#wpforms-submit-19 {
+    background: black!important;
+    color: white!important;
+    font-size: 18px!important;
+    padding: 10px 10px 10px 10px;
+}*/
+
+/* delete padding on posts and contactform */
+
+.is-frontend .posts {
+    padding-top: 0!important;
+}
+
 /* maximaxing contact form column */
-section.post.is-content.post-24.page.type-page.status-publish.hentry .column {
+section.post.is-content.post-198.page.type-page.status-publish.hentry .column {
     width: 100%!important;
     max-width: 100%!important;
     flex: 0 0 auto!important;
@@ -131,36 +149,74 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     max-width: 100%;
 }
 
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {
     .wp-block-column {
         flex-basis: 100%!important;
     }
 }
+*/
 
-/* Delete text of Header "contacto" */
-section.post.is-content.post-24.page.type-page.status-publish.hentry .post-heading h2 a {
+/*text of left column bigger*/
+p.texto-wp-formulario-izda {
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 60px!important;
+}
+
+/*text of right column wp-form bigger and black*/
+.wpforms-field-label {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 28px!important;
+}
+
+span.wpforms-required-label{
+    color: #000000!important;
+}
+
+input#wpforms-19-field_0, input#wpforms-19-field_1, 
+input#wpforms-19-field_2, input#wpforms-19-field_6,
+input#wpforms-19-field_7, input#wpforms-19-field_8,
+textarea#wpforms-19-field_2 {
+    font-size: 28px;
+}
+
+
+/*hide post title of wp form & comments & sharing box*/
+.post-heading {
     display: none;
 }
 
-/* Font of wp form left column */
-.wp-block-column p{
-    font-family: Inter-Bold, sans-serif;
-    font-size: 40px!important;
+section#comments{
+    display: none;
 }
 
-/* form submit button to black */
-
-button#wpforms-submit-19 {
-    background: black;
-    color: white;
-    font-size: 18px!important;
-    padding: 10px 10px 10px 10px;
+div#share-holder{
+    visibility:hidden;
 }
 
-/* delete padding on posts and contactform */
-
-.is-frontend .posts {
-    padding-top: 0!important;
+/*button marlonizate*/
+button#wpforms-submit-19{
+    font-size: 28px!important;
+    background: black!important;
+    color: white!important;
+    padding: 16px 33px 16px 33px;
 }
+
+/*home black typing text animate*/
+
+p#output-marlo{
+    color: #000000;
+}
+
+
+div#wpforms-confirmation-19 {
+    color: #ffffff!important;
+    margin: 0 0 24px 0!important;
+    background: #000000!important;
+    border: 1px solid #ffffff!important;
+    padding: 15px 15px!important;
+    font-family: "Inter-Regular", sans-serif!important;
+    font-size: 28px!important;
+}
+
 
 
