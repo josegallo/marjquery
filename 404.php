@@ -21,12 +21,6 @@
         display:none;
     }
 
-    p{
-        font-family: 'Inter-Regular';
-        font-size: 30px;
-        text-align:left;
-    }
-
     div.no-content p a {
 
         color:black;
@@ -53,13 +47,19 @@
         .hamburger.navbar-right.semplice-menu{
             display:none;
         }
+        
+        p{
+        font-family: 'Inter-Regular';
+        font-size: 30px;
+        text-align:left;
+        }
     }
     /* bigger than mobiles */
     @media screen and (min-width:768px) {
         
         h1 {
             font-family: 'Inter-ExtraLightBETA';
-            font-size: 100px;
+            font-size: 155px;
             text-align:left;
             padding: 0 0 0 100px;
             padding-left:
@@ -68,6 +68,12 @@
 
         .space-404{
             min-height:260px;
+        }
+        
+        p{
+        font-family: 'Inter-Regular';
+        font-size: 60px;
+        text-align:left;
         }
     }
 
@@ -78,13 +84,14 @@
         <div class="jumbotron">
         <h1 class="text-left" >Interiografismo </h1>
         <br class ="break-404">
+        <br class ="break-404">
         <h1 class="text-left" >Singular</h1>
         <div class="space-404">
     </div>
 
     </div class="jumbotron">
         <p>Vaya, parece que nuestra web está de lunes.</p>
-        <p>Pincha <a href="<?php echo home_url(); ?>">aquí</a> para volver a nuestra home.</p>
+        <p>Pincha <a href="<?php echo home_url(); ?>"><strong>aquí</strong></a> para volver a nuestra home.</p>
     </div>
     
 

@@ -7,18 +7,28 @@ $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 a"
   // console.log( "Handler for .click() called." );
   location.replace("https://estudiomarlo.es/webnew/contacto-marlo");
 });
-
+//modificate logo when load page
+// $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#FFC600");
 //when scroll      
 $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
         //make small and align logo
-        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");   
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem"); 
+        //change color of logo
+        //$(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#000000");   
         $(".navbar-inner .logo").css("align-items","center");
         // console.log('make small logo');
         //add id and javascript function on contacto element
         $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('id','cambia-x-dios');
         $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('onclick','myFunction()');
         // console.log( "añado id cambia-x-dios");
+        //add id on button contact elements
+            //home button
+        $(".click-saber-mas-1 .ce-button .is-content a").attr('id','click-saber-mas-1');
+        $(".click-saber-mas-1 .ce-button .is-content a").attr('onclick','myFunction()');
+            //servicios button
+        $(".hablamos-sobre-tu-proyecto-1 .ce-button .is-content a").attr('id','hablamos-sobre-tu-proyecto-1');
+        $(".hablamos-sobre-tu-proyecto-1 .ce-button .is-content a").attr('onclick','myFunction()');
 });
 
 //refresh webpage for wp to load correctly
