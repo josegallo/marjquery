@@ -184,10 +184,28 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
         background: black!important;
         color: white!important;
         padding: 16px 33px 16px 33px;
+        width: 100%;
     }
+
     form#wpforms-form-19{
         padding: 0px 0px 67px;
     }
+
+    /*message of contact confirmation*/
+    div#wpforms-confirmation-19 , div#wpforms-confirmation-19 p {
+        color: #ffffff!important;
+        margin: 0 0 24px 0!important;
+        background: #000000!important;
+        border: 1px solid #ffffff!important;
+        padding: 15px 15px!important;
+        font-family: "Inter-Regular", sans-serif!important;
+        font-size: 35px!important;
+    }
+
+    div#wpforms-confirmation-19 {
+        background: #ffffff!important;
+        border: 1px solid #ffffff!important;
+    } 
 }
 
 
@@ -214,6 +232,22 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     form#wpforms-form-19{
         padding: 0px 0px 250px;
     }
+
+    /*message of contact confirmation*/
+     div#wpforms-confirmation-19 p {
+        color: #ffffff!important;
+        margin: 0 0 24px 0!important;
+        background: #000000!important;
+        border: 1px solid #ffffff!important;
+        padding: 15px 15px!important;
+        font-family: "Inter-Regular", sans-serif!important;
+        font-size: 41px!important;
+    }
+
+    div#wpforms-confirmation-19 {
+        background: #ffffff!important;
+        border: 1px solid #ffffff!important;
+    }
 }   
 
 /* laptop */
@@ -238,6 +272,21 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     form#wpforms-form-19{
         padding: 0px 0px 276px;
     }
+    /*message of contact confirmation*/
+    div#wpforms-confirmation-19 p {
+        color: #ffffff!important;
+        margin: 0 0 24px 0!important;
+        background: #000000!important;
+        border: 1px solid #ffffff!important;
+        padding: 15px 15px!important;
+        font-family: "Inter-Regular", sans-serif!important;
+        font-size: 45px!important;
+    }
+
+    div#wpforms-confirmation-19 {
+        background: #ffffff!important;
+        border: 1px solid #ffffff!important;
+    }
 
 }
 
@@ -261,6 +310,20 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
         background: black!important;
         color: white!important;
         padding: 16px 33px 16px 33px;
+    }
+    /*message of contact confirmation*/
+    div#wpforms-confirmation-19 p {
+        color: #ffffff!important;
+        margin: 0 0 24px 0!important;
+        background: #000000!important;
+        border: 1px solid #ffffff!important;
+        padding: 15px 15px!important;
+        font-family: "Inter-Regular", sans-serif!important;
+        font-size: 60px!important;
+    }
+    div#wpforms-confirmation-19 {
+        background: #ffffff!important;
+        border: 1px solid #ffffff!important;
     }
 }
 
@@ -299,16 +362,6 @@ p#output-marlo, p#output-marlo-desktop, p#output-marlo-tablet-w , p#output-marlo
     color: #000000;
 }
 
-
-div#wpforms-confirmation-19 {
-    color: #ffffff!important;
-    margin: 0 0 24px 0!important;
-    background: #000000!important;
-    border: 1px solid #ffffff!important;
-    padding: 15px 15px!important;
-    font-family: "Inter-Regular", sans-serif!important;
-    font-size: 28px!important;
-}
 
 
 /*button of "saber más de nosotros"*/
