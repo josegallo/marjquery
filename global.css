@@ -76,6 +76,15 @@
     display: none;
 }
 
+/*proyecto victoria*/
+/*hide share buttons*/
+
+div#content_3l6r3qf7s .is-content.share-box , div#content_3l6r3qf7s .is-content.share-box
+ {
+    display: none;
+}
+
+/*home*/
 /* Cursor Styling */
 
 .cursor-marlo::after {
@@ -156,16 +165,103 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
 }
 */
 
-/*text of left column bigger*/
-p.texto-wp-formulario-izda {
-    font-family: "Inter-Bold", sans-serif;
-    font-size: 60px!important;
+/*mobile*/
+
+@media screen and (max-width:544px) {
+    /*text of left column*/
+    p.texto-wp-formulario-izda {
+        font-family: "Inter-Bold", sans-serif;
+        font-size: 35px!important;
+    }
+    /*text of right column wp-form bigger and black*/
+    .wpforms-field-label {
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 12px!important;
+    }
+    /*button marlonizate*/
+    button#wpforms-submit-19{
+        font-size: 12px!important;
+        background: black!important;
+        color: white!important;
+        padding: 16px 33px 16px 33px;
+    }
+    form#wpforms-form-19{
+        padding: 0px 0px 67px;
+    }
 }
 
-/*text of right column wp-form bigger and black*/
-.wpforms-field-label {
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 28px!important;
+
+/*tablets*/
+
+@media screen and (min-width:545px) and (max-width:991px) {
+    /*text of left column*/
+    p.texto-wp-formulario-izda {
+        font-family: "Inter-Bold", sans-serif;
+        font-size: 41px!important;
+    }
+    /*text of right column wp-form bigger and black*/
+    .wpforms-field-label {
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 19px!important;
+    }
+    /*button marlonizate*/
+    button#wpforms-submit-19{
+        font-size: 19px!important;
+        background: black!important;
+        color: white!important;
+        padding: 16px 33px 16px 33px;
+    }
+    form#wpforms-form-19{
+        padding: 0px 0px 250px;
+    }
+}   
+
+/* laptop */
+@media screen and (min-width:992px) and (max-width:1440px) {
+    /*text of left column*/
+    p.texto-wp-formulario-izda {
+        font-family: "Inter-Bold", sans-serif;
+        font-size: 45px!important;
+    }
+    /*text of right column wp-form bigger and black*/
+    .wpforms-field-label {
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 25px!important;
+    }
+    /*button marlonizate*/
+    button#wpforms-submit-19{
+        font-size: 25px!important;
+        background: black!important;
+        color: white!important;
+        padding: 16px 33px 16px 33px;
+    }
+    form#wpforms-form-19{
+        padding: 0px 0px 276px;
+    }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1441px) {
+    /*text of left column*/
+    p.texto-wp-formulario-izda {
+        font-family: "Inter-Bold", sans-serif;
+        font-size: 60px!important;
+    }
+
+    /*text of right column wp-form bigger and black*/
+        .wpforms-field-label {
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 28px!important;
+    }
+    /*button marlonizate*/
+    button#wpforms-submit-19{
+        font-size: 28px!important;
+        background: black!important;
+        color: white!important;
+        padding: 16px 33px 16px 33px;
+    }
 }
 
 span.wpforms-required-label{
@@ -193,19 +289,13 @@ div#share-holder{
     visibility:hidden;
 }
 
-/*button marlonizate*/
-button#wpforms-submit-19{
-    font-size: 28px!important;
-    background: black!important;
-    color: white!important;
-    padding: 16px 33px 16px 33px;
-}
+
 
 /*home*/
 
 /*home black typing text animate*/
 
-p#output-marlo{
+p#output-marlo, p#output-marlo-desktop, p#output-marlo-tablet-w , p#output-marlo-tablet-p ,p#output-marlo-2 {
     color: #000000;
 }
 
@@ -220,6 +310,7 @@ div#wpforms-confirmation-19 {
     font-size: 28px!important;
 }
 
+
 /*button of "saber más de nosotros"*/
 
 @media only screen and (max-width: 544px) {
@@ -232,7 +323,16 @@ div#wpforms-confirmation-19 {
   .click-saber-mas-mobile {
     display: none;
   }
+
 }
 
+/*Nosotros web*/
 
+@media only screen and (max-width: 544px) {
+
+  div#content_02n0k7sti div.ce-image img.is-content{
+    height: 332px !important;
+    width: auto !important;
+  }
+}
 
