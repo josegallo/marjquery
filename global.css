@@ -1,3 +1,24 @@
+/*laptop customization*/
+
+@media screen and (min-width:992px) and (max-width:1440px) {
+    /*section interiografismo singular*/
+    div#content_nhzytb6o5 p{
+        font-family: "Inter-ExtraLightBETA", sans-serif!important;       
+        font-size: 114px!important;
+    }
+    /*section wow*/
+    /*left colum*/
+    div#content_yn646q21a p{
+        font-family: "Inter-Bold", sans-serif;
+        font-size: 226px!important;
+    }
+
+    div#content_yn646q21a{
+        padding-top: 140px!important;
+    }
+}
+
+
 /* proyectos web style */
 
 .casa-victoria-proyecto:hover, .casa-victoria-proyecto a:hover{
