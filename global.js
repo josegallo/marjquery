@@ -11,21 +11,43 @@ $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 a"
 // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#FFC600");
 //when scroll      
 $(window).scroll(function (event) {
+        var navbarHeight = $('.semplice-navbar').outerHeight();       
         var scroll = $(window).scrollTop();
-        var navbarHeight = $('.semplice-navbar').outerHeight();
-        //make small and align logo
-        if ( $(window).width() > 1440) {
-            $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
-        } else if ( $(window).width() > 544 && $(window).width() < 1439){
-            $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
-        }
-        else {
-            $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
-        }
-        //change color of logo
-        //$(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#000000");   
-        $(".navbar-inner .logo").css("align-items","center");
-        // console.log('make small logo');
+        console.log (scroll);
+
+        if (scroll > 0) {
+            //make small and align logo
+            if ( $(window).width() > 1440) {
+                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+            } else if ( $(window).width() > 544 && $(window).width() < 1439){
+                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
+            }
+            else {
+                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
+            }
+            //change color of logo
+            //$(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#000000");   
+            $(".navbar-inner .logo").css("align-items","center");
+            // console.log('make small logo');
+        } else{
+            //make bigger and align logo
+            console.log("scroll = 0");
+            if ( $(window).width() > 1440) {
+                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
+            } else if ( $(window).width() > 544 && $(window).width() < 1439){
+                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
+            }
+            else {
+                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+            }
+            //change color of logo
+            //$(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#000000");   
+            $(".navbar-inner .logo").css("align-items","center");
+            // console.log('make small logo');
+        };
+
+
+
         //add id and javascript function on contacto element
         $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('id','cambia-x-dios');
         $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('onclick','myFunction()');
@@ -51,7 +73,7 @@ function myFunction() {
                         // $("div#share-holder").css("display","none");
                         // $("section#comments").css("display","none");
                         // $(".wpforms-field.wpforms-field-hp").css("display","none");   
-                        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");   
+                        // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");   
                         $(".navbar-inner .logo").css("align-items","center");
                     }
     });
