@@ -1,3 +1,20 @@
+/*avoid white nav bar on web load*/
+
+/*home*/
+div#content-10 {
+    background: rgb(255, 198, 0)!important;
+}
+
+/*servicios*/
+div#content-89 {
+    background: black !important;
+}
+
+/*nosotros*/
+div#content-82 {
+    background: #ffc600 !important;
+}
+
 /*laptop customization*/
 
 @media screen and (min-width:992px) and (max-width:1440px) {
@@ -6,6 +23,7 @@
         font-family: "Inter-ExtraLightBETA", sans-serif!important;       
         font-size: 114px!important;
     }
+
     /*section wow*/
     /*left colum*/
     div#content_yn646q21a p{
