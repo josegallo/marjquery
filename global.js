@@ -5,7 +5,8 @@ $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 a"
 //refresh contact-form to have a correct wp-form working
 $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 a" ).click(function() {
   // console.log( "Handler for .click() called." );
-  location.replace("https://estudiomarlo.es/webnew/contacto-marlo");
+  myFunction();
+  // location.replace("https://estudiomarlo.es/webnew/contacto-marlo");
 });
 //modificate logo when load page
 // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#FFC600");
