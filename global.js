@@ -13,7 +13,14 @@ $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 a"
 $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
         //make small and align logo
-        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem"); 
+        if ( $(window).width() > 1440) {
+            $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+        } else if ( $(window).width() > 544 && $(window).width() < 1439){
+            $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
+        }
+        else {
+            $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
+        }
         //change color of logo
         //$(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#000000");   
         $(".navbar-inner .logo").css("align-items","center");
@@ -43,7 +50,7 @@ function myFunction() {
                         // $("div#share-holder").css("display","none");
                         // $("section#comments").css("display","none");
                         // $(".wpforms-field.wpforms-field-hp").css("display","none");   
-                        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");   
+                        // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");   
                         $(".navbar-inner .logo").css("align-items","center");
                     }
     });
