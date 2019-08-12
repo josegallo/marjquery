@@ -1,84 +1,63 @@
-//add unique id to contact nav-bar
-$( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 a" ).attr('id','cambia-x-dios');
-// console.log( "añado id");
 
-//refresh contact-form to have a correct wp-form working
-$( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 a" ).click(function() {
-  // console.log( "Handler for .click() called." );
-  myFunction();
-  // location.replace("https://estudiomarlo.es/webnew/contacto-marlo");
-});
 //modificate logo when load page
-// $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#FFC600");
+
 //when scroll      
 $(window).scroll(function (event) {
         var navbarHeight = $('.semplice-navbar').outerHeight();       
         var scroll = $(window).scrollTop();
-        console.log (scroll);
 
-        if (scroll > 0) {
-            //make small and align logo
-            if ( $(window).width() > 1440) {
-                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
-            } else if ( $(window).width() > 544 && $(window).width() < 1439){
-                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
-            }
-            else {
-                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
-            }
-            //change color of logo
-            //$(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#000000");   
-            $(".navbar-inner .logo").css("align-items","center");
-            // console.log('make small logo');
-        } else{
-            //make bigger and align logo
-            console.log("scroll = 0");
-            if ( $(window).width() > 1440) {
-                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
-            } else if ( $(window).width() > 544 && $(window).width() < 1439){
-                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
-            }
-            else {
-                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
-            }
-            //change color of logo
-            //$(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#000000");   
-            $(".navbar-inner .logo").css("align-items","center");
-            // console.log('make small logo');
-        };
-
-
+        if (scroll > 0) { makeSmallerLogoWhenScrollDown (); } 
+        else { makeBiggerLogoWhenScrollDown () };
 
         //add id and javascript function on contacto element
-        $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('id','cambia-x-dios');
         $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('onclick','myFunction()');
-        // console.log( "añado id cambia-x-dios");
+
         //add id on button contact elements
-            //home button
+        //home button
         $(".click-saber-mas-1 .ce-button .is-content a").attr('id','click-saber-mas-1');
         $(".click-saber-mas-1 .ce-button .is-content a").attr('onclick','myFunction()');
-            //servicios button
+        //servicios button
         $(".hablamos-sobre-tu-proyecto-1 .ce-button .is-content a").attr('id','hablamos-sobre-tu-proyecto-1');
         $(".hablamos-sobre-tu-proyecto-1 .ce-button .is-content a").attr('onclick','myFunction()');
 });
 
 //refresh webpage for wp to load correctly
+
 function myFunction() {
-  location.replace("https://estudiomarlo.es/webnew/contacto-marlo");
+    location.replace("https://estudiomarlo.es/webnew/contacto-marlo");
 }
 
-//Contacto change log dimension when refresh 
-(function ($) {
-    $(document).ready(function () {
-                if(window.location.href === "https://estudiomarlo.es/webnew/contacto-marlo"){
-                        // $("div#share-holder").css("display","none");
-                        // $("section#comments").css("display","none");
-                        // $(".wpforms-field.wpforms-field-hp").css("display","none");   
-                        // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");   
-                        $(".navbar-inner .logo").css("align-items","center");
-                    }
-    });
-})(jQuery);
+
+function makeSmallerLogoWhenScrollDown () {
+    //make small and align logo
+    if ( $(window).width() > 1440) {
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+    } 
+    else if ( $(window).width() > 544 && $(window).width() < 1439){
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
+        }
+    else {
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
+        }
+    //align logo  
+    $(".navbar-inner .logo").css("align-items","center");
+}
+
+function makeBiggerLogoWhenScrollDown () {
+    //make bigger and align logo
+    console.log("scroll = 0");
+    if ( $(window).width() > 1440) {
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
+    } else if ( $(window).width() > 544 && $(window).width() < 1439){
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
+    }
+        else {
+    $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+        }
+    //align logo   
+    $(".navbar-inner .logo").css("align-items","center");
+}
+
 
 //hide of share buttons on each project
 (function ($) {
