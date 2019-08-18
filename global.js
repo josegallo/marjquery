@@ -1,12 +1,15 @@
 
+//make logo yellow (invisible) when loading home
+
 if ( window.location.pathname == '/webnew/' ){
         console.log('estoy en home');
         $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#ffc600");
     }
 
+//if click in logo, reload to home
 jQuery('.navbar-inner.menu-type-text .logo.navbar-left a').click(function(){
     console.log('logo is clicked');
-  location.replace("https://estudiomarlo.es/webnew/");
+    location.replace("https://estudiomarlo.es/webnew/");
 });
 
 
