@@ -17,24 +17,42 @@ div#content-82 {
 
 /*laptop customization*/
 
-@media screen and (min-width:992px) and (max-width:1440px) {
+/*home*/
+/*@media screen and (min-width:992px) and (max-width:1440px) {*/
     /*section interiografismo singular*/
-    div#content_nhzytb6o5 p{
+/*    div#content_nhzytb6o5 p{
         font-family: "Inter-ExtraLightBETA", sans-serif!important;       
         font-size: 114px!important;
-    }
+    }*/
+
+    /*typing text*/
+/*    #output-marlo {
+        font-size: 60px!important;
+        padding-bottom: 440px!important;
+    }*/
 
     /*section wow*/
     /*left colum*/
-    div#content_yn646q21a p{
+/*    div#content_yn646q21a p{
         font-family: "Inter-Bold", sans-serif;
         font-size: 226px!important;
+    }*/
+
+/*    div#row_dz85z9z7n{
+        padding-top: 140px!important;
+    }*/
+
+    /*right colum*/
+/*    div#content_9gsaw2fgg p:first-child, div#content_9gsaw2fgg p:nth-child(2) {
+        font-family: "Inter-Bold", sans-serif;
+        font-size: 45px!important;
+    }*/
+
+/*    div#content_9gsaw2fgg{
+        padding-bottom: 140px!important;
     }
 
-    div#content_yn646q21a{
-        padding-top: 140px!important;
-    }
-}
+}*/
 
 
 /* proyectos web style */
@@ -112,7 +130,7 @@ div#content-82 {
 }
 
 .block-to-remove {
-    display: none;
+    display: none!important;
 }
 
 /*proyecto victoria*/
@@ -120,7 +138,7 @@ div#content-82 {
 
 div#content_3l6r3qf7s .is-content.share-box , div#content_3l6r3qf7s .is-content.share-box
  {
-    display: none;
+    display: none!important;
 }
 
 /*home*/
@@ -207,6 +225,14 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
 /*mobile*/
 
 @media screen and (max-width:544px) {
+
+    /*section#section_59gr20mca, */
+
+    .Interrogante-con, .carrusel-desktop, .casa-victoria-borrar-mobile {
+        display: none!important;
+        display: hidden!important;
+    }
+
     /*text of left column*/
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
@@ -250,7 +276,20 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
 
 /*tablets*/
 
+/*tablet portrait*/
+
+@media screen and (min-width:545px) and (max-width:768px) {
+    .casa-victoria-borrar-mobile {
+            display: none!important;
+    }
+}
+
 @media screen and (min-width:545px) and (max-width:991px) {
+
+    .interrogante-mobile, .carrusel-mobile{
+        display: none!important;
+    }
+
     /*text of left column*/
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
@@ -290,7 +329,12 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
 }   
 
 /* laptop */
+
 @media screen and (min-width:992px) and (max-width:1440px) {
+
+    .interrogante-mobile, .carrusel-mobile {
+        display: none!important;
+    }
     /*text of left column*/
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
@@ -332,6 +376,11 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
 /* desktop */
 
 @media screen and (min-width:1441px) {
+
+    .interrogante-mobile, .carrusel-mobile {
+        display: none!important;
+    }
+
     /*text of left column*/
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
@@ -380,11 +429,11 @@ textarea#wpforms-19-field_2 {
 
 /*hide post title of wp form & comments & sharing box*/
 .post-heading {
-    display: none;
+    display: none!important;
 }
 
 section#comments{
-    display: none;
+    display: none!important;
 }
 
 div#share-holder{
@@ -407,13 +456,13 @@ p#output-marlo, p#output-marlo-desktop, p#output-marlo-tablet-w , p#output-marlo
 
 @media only screen and (max-width: 544px) {
   .click-saber-mas-1 {
-    display: none;
+    display: none!important;
   }
 }
 
 @media only screen and (min-width: 545px) {
   .click-saber-mas-mobile {
-    display: none;
+    display: none!important;
   }
 
 }
