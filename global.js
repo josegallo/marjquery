@@ -1,13 +1,35 @@
 
+if ( window.location.pathname == '/webnew/' ){
+        console.log('estoy en home');
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#ffc600");
+    }
+
+jQuery('.navbar-inner.menu-type-text .logo.navbar-left a').click(function(){
+    console.log('logo is clicked');
+  location.replace("https://estudiomarlo.es/webnew/");
+});
+
+
 //modificate logo when load page
 
 //when scroll      
 $(window).scroll(function (event) {
-        var navbarHeight = $('.semplice-navbar').outerHeight();       
+        var navbarHeight = $('.semplice-navbar').outerHeight();  
+        console.log('nav bar height = ' + navbarHeight );   
         var scroll = $(window).scrollTop();
+        console.log(window.location.pathname);
 
-        if (scroll > 0) { makeSmallerLogoWhenScrollDown (); } 
-        else { makeBiggerLogoWhenScrollDown () };
+        if ( window.location.pathname == '/webnew/' ){
+            // Index (home) page
+            if (scroll > (navbarHeight + 156)) { makeSmallerLogoWhenScrollDown (); } 
+            else { makeBiggerLogoWhenScrollDown () };
+        } 
+        
+        // if else ( window.location.pathname == '/webnew/nosotros' ){
+        //         console.log('webnew/nosotros');
+        //         $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "black");
+        // } else {};
+
 
         //add id and javascript function on contacto element
         $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('onclick','myFunction()');
@@ -29,33 +51,39 @@ function myFunction() {
 
 
 function makeSmallerLogoWhenScrollDown () {
-    //make small and align logo
-    if ( $(window).width() > 1440) {
-        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+    //make small logo and nav bar height and align logo
+    if ( $(window).width() > 544) {
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "black");
+        console.log("scroll down");
+        // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+        // $("header.nav_3xen11lez.semplice-navbar.active-navbar.non-sticky-nav").css("height", "80px");
     } 
-    else if ( $(window).width() > 544 && $(window).width() < 1439){
-        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
-        }
-    else {
-        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
-        }
+    // else if ( $(window).width() > 544 && $(window).width() < 1439){
+    //     $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
+    //     }
+    // else {
+    //     $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
+    //     }
     //align logo  
-    $(".navbar-inner .logo").css("align-items","center");
+    // $(".navbar-inner .logo").css("align-items","center");
 }
 
 function makeBiggerLogoWhenScrollDown () {
     //make bigger and align logo
     console.log("scroll = 0");
-    if ( $(window).width() > 1440) {
-        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
-    } else if ( $(window).width() > 544 && $(window).width() < 1439){
-        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
-    }
-        else {
-    $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
-        }
+    if ( $(window).width() > 544) {
+        // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "8.667rem");
+        // $("header.nav_3xen11lez.semplice-navbar.active-navbar.non-sticky-nav").css("height", "190px!important");
+        $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#ffc600");
+    } 
+    // else if ( $(window).width() > 544 && $(window).width() < 1439){
+    //     $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
+    // }
+    //     else {
+    // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
+    //     }
     //align logo   
-    $(".navbar-inner .logo").css("align-items","center");
+    // $(".navbar-inner .logo").css("align-items","center");
 }
 
 
