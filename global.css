@@ -58,7 +58,7 @@ div#content-82 {
 /* proyectos web style */
 
 .casa-victoria-proyecto:hover, .casa-victoria-proyecto a:hover{
-    color: #ffc600;
+    color: #ffc600!important;
 }
 
 .casa-victoria-proyecto:hover span.peque{
@@ -70,7 +70,7 @@ div#content-82 {
 }
 
 .foto-marlo-proyecto:hover, .foto-marlo-proyecto a:hover{
-    color: #ffc600;
+    color: #ffc600!important;
 }
 
 .foto-marlo-proyecto span.peque{
@@ -82,7 +82,7 @@ div#content-82 {
 }
 
 .mujer-y-arquitectura-proyecto:hover, .mujer-y-arquitectura-proyecto a:hover{
-    color: #ffc600;
+    color: #ffc600!important;
 }
 
 .mujer-y-arquitectura-proyecto span.peque{
@@ -94,7 +94,7 @@ div#content-82 {
 }
 
 .gobierno-abierto-proyecto:hover, .gobierno-abierto-proyecto a:hover{
-    color: #ffc600;
+    color: #ffc600!important;
 }
 
 .gobierno-abierto-proyecto span.peque{
@@ -106,7 +106,7 @@ div#content-82 {
 }
 
 .logos-indentidad-proyecto:hover, .logos-indentidad-proyecto a:hover{
-    color: #ffc600;
+    color: #ffc600!important;
 }
 
 .logos-indentidad-proyecto span.peque{
@@ -118,7 +118,7 @@ div#content-82 {
 }
 
 .bosque-urbano-proyecto:hover, .bosque-urbano-proyecto a:hover{
-    color: #ffc600;
+    color: #ffc600!important;
 }
 
 .bosque-urbano-proyecto span.peque{
