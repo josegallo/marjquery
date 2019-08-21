@@ -6,7 +6,26 @@ div#content-10 {
 }
 
 /*servicios*/
+/*make background black*/
 div#content-89 {
+    background: black !important;
+}
+
+/*contacta con nosotros underline*/
+
+  
+.hablanos-cta a:link {
+    text-decoration: none;
+    border-bottom: 2px solid black !important;
+}
+
+a:hover {
+ border-bottom-color: #ffc600!important;
+}
+
+
+/*make line background black*/
+#section_45y6fnuy6 {
     background: black !important;
 }
 
@@ -18,7 +37,7 @@ div#content-82 {
 /*laptop customization*/
 
 /*home*/
-/*@media screen and (min-width:992px) and (max-width:1440px) {*/
+@media screen and (min-width:1171px) and (max-width:1800px) {
     /*section interiografismo singular*/
 /*    div#content_nhzytb6o5 p{
         font-family: "Inter-ExtraLightBETA", sans-serif!important;       
@@ -33,10 +52,10 @@ div#content-82 {
 
     /*section wow*/
     /*left colum*/
-/*    div#content_yn646q21a p{
+    div#content_yn646q21a p{
         font-family: "Inter-Bold", sans-serif;
         font-size: 226px!important;
-    }*/
+    }
 
 /*    div#row_dz85z9z7n{
         padding-top: 140px!important;
@@ -50,9 +69,9 @@ div#content-82 {
 
 /*    div#content_9gsaw2fgg{
         padding-bottom: 140px!important;
-    }
+    }*/
 
-}*/
+}
 
 
 /* proyectos web style */
@@ -136,10 +155,10 @@ div#content-82 {
 /*proyecto victoria*/
 /*hide share buttons*/
 
-div#content_3l6r3qf7s .is-content.share-box , div#content_3l6r3qf7s .is-content.share-box
+/*div#content_3l6r3qf7s .is-content.share-box , div#content_3l6r3qf7s .is-content.share-box
  {
     display: none!important;
-}
+}*/
 
 /*home*/
 /* Cursor Styling */
@@ -236,16 +255,23 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     /*text of left column*/
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
-        font-size: 35px!important;
+        font-size: 28px!important;
+        line-height: 38px!important;
     }
     /*text of right column wp-form bigger and black*/
     .wpforms-field-label {
         font-family: "Inter-Regular", sans-serif;
-        font-size: 12px!important;
+        font-size: 15px!important;
     }
+    /*imput text*/
+    input#wpforms-19-field_0, input#wpforms-19-field_1, input#wpforms-19-field_8, 
+    input#wpforms-19-field_6, input#wpforms-19-field_7, textarea#wpforms-19-field_2  {
+        font-size: 18px!important;
+    }
+
     /*button marlonizate*/
     button#wpforms-submit-19{
-        font-size: 12px!important;
+        font-size: 15px!important;
         background: black!important;
         color: white!important;
         padding: 16px 33px 16px 33px;
@@ -253,18 +279,19 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     }
 
     form#wpforms-form-19{
-        padding: 0px 0px 67px;
+        padding: 0px 0px 0px;
     }
 
     /*message of contact confirmation*/
     div#wpforms-confirmation-19 , div#wpforms-confirmation-19 p {
-        color: #ffffff!important;
+        color: #ffc600!important;
         margin: 0 0 24px 0!important;
-        background: #000000!important;
+        background: white!important;
         border: 1px solid #ffffff!important;
-        padding: 15px 15px!important;
-        font-family: "Inter-Regular", sans-serif!important;
-        font-size: 35px!important;
+        padding: 15px 0px!important;
+        font-family: "Inter-Bold", sans-serif!important;
+        font-size: 28px!important;
+        line-height: 38px!important;
     }
 
     div#wpforms-confirmation-19 {
@@ -294,6 +321,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
         font-size: 41px!important;
+        line-height: 48px!important;
     }
     /*text of right column wp-form bigger and black*/
     .wpforms-field-label {
@@ -313,13 +341,14 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
 
     /*message of contact confirmation*/
      div#wpforms-confirmation-19 p {
-        color: #ffffff!important;
-        margin: 0 0 24px 0!important;
-        background: #000000!important;
+        color: #ffc600!important;
+        margin: -33px 0 24px 0!important;
+        background: white!important;
         border: 1px solid #ffffff!important;
         padding: 15px 15px!important;
-        font-family: "Inter-Regular", sans-serif!important;
+        font-family: "Inter-Bold", sans-serif!important;
         font-size: 41px!important;
+        line-height: 48px!important;
     }
 
     div#wpforms-confirmation-19 {
@@ -339,6 +368,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
         font-size: 45px!important;
+        line-height: 55px !important;
     }
     /*text of right column wp-form bigger and black*/
     .wpforms-field-label {
@@ -357,13 +387,14 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     }
     /*message of contact confirmation*/
     div#wpforms-confirmation-19 p {
-        color: #ffffff!important;
-        margin: 0 0 24px 0!important;
-        background: #000000!important;
+        color: #ffc600!important;
+        margin: -32px 0 24px 0!important;
+        background: white!important;
         border: 1px solid #ffffff!important;
         padding: 15px 15px!important;
-        font-family: "Inter-Regular", sans-serif!important;
+        font-family: "Inter-Bold", sans-serif!important;
         font-size: 45px!important;
+        line-height: 55px!important;
     }
 
     div#wpforms-confirmation-19 {
@@ -385,6 +416,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     p.texto-wp-formulario-izda {
         font-family: "Inter-Bold", sans-serif;
         font-size: 60px!important;
+        line-height: 75px!important;
     }
 
     /*text of right column wp-form bigger and black*/
@@ -401,13 +433,14 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
     }
     /*message of contact confirmation*/
     div#wpforms-confirmation-19 p {
-        color: #ffffff!important;
-        margin: 0 0 24px 0!important;
-        background: #000000!important;
+        color: #ffc600!important;
+        margin: -18px 0 24px 0!important;
+        background: white!important;
         border: 1px solid #ffffff!important;
-        padding: 15px 15px!important;
-        font-family: "Inter-Regular", sans-serif!important;
+        padding: 0px 15px!important;
+        font-family: "Inter-Bold", sans-serif!important;
         font-size: 60px!important;
+        line-height: 75px!important;
     }
     div#wpforms-confirmation-19 {
         background: #ffffff!important;
@@ -436,10 +469,10 @@ section#comments{
     display: none!important;
 }
 
-div#share-holder{
+/*div#share-holder{
     visibility:hidden;
 }
-
+*/
 
 
 /*home*/
