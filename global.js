@@ -1,10 +1,11 @@
 
 //make logo yellow (invisible) when loading home
 
-if ( window.location.pathname == '/webnew/' ){
+if ( window.location.pathname == '/webnew/' && $(window).width() > 544){
         console.log('estoy en home');
         $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#ffc600");
     }
+
 
 //if click in logo, reload to home
 jQuery('.navbar-inner.menu-type-text .logo.navbar-left a').click(function(){
@@ -22,17 +23,18 @@ $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
         console.log(window.location.pathname);
 
+        //make logo yellow (invisible) when loading home
+
+        if ( window.location.pathname == '/webnew/' && $(window).width() > 544){
+                console.log('estoy en home');
+                $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#ffc600");
+            }
+
         if ( window.location.pathname == '/webnew/' ){
             // Index (home) page
             if (scroll > (navbarHeight + 156)) { makeSmallerLogoWhenScrollDown (); } 
             else { makeBiggerLogoWhenScrollDown () };
         } 
-        
-        // if else ( window.location.pathname == '/webnew/nosotros' ){
-        //         console.log('webnew/nosotros');
-        //         $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "black");
-        // } else {};
-
 
         //add id and javascript function on contacto element
         $( "li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-214 span" ).attr('onclick','myFunction()');
@@ -61,14 +63,6 @@ function makeSmallerLogoWhenScrollDown () {
         // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
         // $("header.nav_3xen11lez.semplice-navbar.active-navbar.non-sticky-nav").css("height", "80px");
     } 
-    // else if ( $(window).width() > 544 && $(window).width() < 1439){
-    //     $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1rem");
-    //     }
-    // else {
-    //     $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "0.5rem");
-    //     }
-    //align logo  
-    // $(".navbar-inner .logo").css("align-items","center");
 }
 
 function makeBiggerLogoWhenScrollDown () {
@@ -79,34 +73,30 @@ function makeBiggerLogoWhenScrollDown () {
         // $("header.nav_3xen11lez.semplice-navbar.active-navbar.non-sticky-nav").css("height", "190px!important");
         $(".navbar-inner.menu-type-text .logo.navbar-left a").css("color", "#ffc600");
     } 
-    // else if ( $(window).width() > 544 && $(window).width() < 1439){
-    //     $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "5rem");
-    // }
-    //     else {
-    // $(".navbar-inner.menu-type-text .logo.navbar-left a").css("font-size", "1.5rem");
-    //     }
-    //align logo   
-    // $(".navbar-inner .logo").css("align-items","center");
 }
 
 
 //hide of share buttons on each project
 (function ($) {
     $(document).ready(function () {
-                //change text of share buttons
-                $('.share-button.button-facebook a').text("COMPARTE");
-                $('.share-button.button-twitter a').text("COMPARTE");
-                $('.share-button.button-linkedin a').text("COMPARTE");           
+                if ( window.location.pathname == '/webnew/casa-victoria'){
+                    //change text of share buttons
+                    $('.share-button.button-facebook a').text("COMPARTE");
+                    $('.share-button.button-twitter a').text("COMPARTE");
+                    $('.share-button.button-linkedin a').text("COMPARTE"); 
+                };          
     });
 })(jQuery);
 
 //Reinforce hide of share buttons on each project if scroll
 $(window).scroll(function (event) {
-        var scroll = $(window).scrollTop();
-                //change text of share buttons
-                $('.share-button.button-facebook a').text("COMPARTE");
-                $('.share-button.button-twitter a').text("COMPARTE");
-                $('.share-button.button-linkedin a').text("COMPARTE");
+                if ( window.location.pathname == '/webnew/casa-victoria'){
+                    var scroll = $(window).scrollTop();
+                    //change text of share buttons
+                    $('.share-button.button-facebook a').text("COMPARTE");
+                    $('.share-button.button-twitter a').text("COMPARTE");
+                    $('.share-button.button-linkedin a').text("COMPARTE");
+                };      
 });
 
 
