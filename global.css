@@ -469,10 +469,10 @@ section#comments{
     display: none!important;
 }
 
-/*div#share-holder{
+.post.is-content.post-198.page.type-page.status-publish.hentry div#share-holder{
     visibility:hidden;
 }
-*/
+
 
 
 /*home*/
