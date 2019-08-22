@@ -23,6 +23,18 @@ a:hover {
  border-bottom-color: #ffc600!important;
 }
 
+/*saber más sobre nosotros underline*/
+
+  
+.saber-mas-nosotros-cta a:link {
+    text-decoration: none;
+    border-bottom: 2px solid black !important;
+}
+
+.saber-mas-nosotros-cta a:hover {
+ border-bottom-color: white!important;
+}
+
 
 /*make line background black*/
 #section_45y6fnuy6 {
@@ -474,7 +486,6 @@ section#comments{
 }
 
 
-
 /*home*/
 
 /*home black typing text animate*/
@@ -482,7 +493,6 @@ section#comments{
 p#output-marlo, p#output-marlo-desktop, p#output-marlo-tablet-w , p#output-marlo-tablet-p ,p#output-marlo-2 {
     color: #000000;
 }
-
 
 
 /*button of "saber más de nosotros"*/
